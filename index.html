@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<頭部>
+<title>美利雙收 vs. 萬美利20年總資產比較（極簡條款圖）</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<樣式>
+主體 { 字體系列： Arial，sans-serif； }
+.chart-container { 寬度： 80%；邊距：20px 自動； }
+.chart-explanation { 寬度：80%；邊距：0 自動；文字對齊：左；行高：1.6； }
+.table-container { 寬度： 90%；邊距：20px 自動； }
+.table-container 表格 { 寬度： 100%；邊框崩潰：崩潰； }
+.table-container th，.table-container td { 邊框：1px 實線#ddd；填充：8px；文字對齊：居中； }
+.note { 字體大小： 0.9em；顏色：#777； }
+</style>
+</head>
+<主體>
+
+<div class="chart-container">
+    <canvas id="simplifiedChart" width="800" height="350"></canvas>
+</div>
+
+<div class="chart-explanation">
+    <h3 style="color: #0056b3;">圖表白話說明：</h3>
+    <p>這張長條圖是用最簡單方式，比較「美利雙收 (不轉換)」和「萬美利 (轉換)」這兩種選擇，在 20 年後估價總資產差異。
+    <p><strong><span style="color: rgb(75, 192, 192);">綠色長條</span>代表「美利雙收」：</strong> <br>不轉讓美利雙收，20年後的總資產預估約為<span style="font-weight: boldx;
+    <p><strong><span style="color: rgb(255, 99, 132);">紅色長條代表「萬美利」：</strong> <br>兌換為萬美利，20年後的總資產預估約為<span style="font-weight: bold;">9,400 美元 </span>。
+    <p><strong>簡單來說：</strong></p>
+    <ul>
+        <li><strong>看長條高低，就能知道哪一個選擇20年後預期資產比率。
+        <li><strong>「萬美利」條款比較高，代表預估20年後總資產稍多。
+    </ul>
+    <p class="note">**提醒：**這只是最簡化的圖表，更詳細資訊和保障比率，請看下面的表格。
+</div>
+
+<div class="table-container">
+    <h3 style="color: #0056b3;">詳細比較表（含保障差價）</h3>
+    <表格>
+        <標題>
+            <tr>
+                <th>年</th>
+                <th>情況一：不轉換（美利堅合眾國收支期金）<br>資產價值（美元）</th>
+                <th>情況一：不轉換<br>累計現金流（美元）</th>
+                <th>情況一：不轉換<br> 壽險身故保障（美元）<br> <small>（預估，需確認）</small></th>
+                <th>情況二：兌換萬美利<br>保單價值（美元）</th>
+                <th>情境二：兌換萬美利<br>累計現金流（美元）</th>
+                <th>情境二：兌換萬美利<br>壽險身故保障（美元）<br> <small>（預估，初期放大效果）</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>第 0 年</td>
+                <td>5,000</td>
+                <td>0</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>5,000</td>
+                <td>0</td>
+                <td><center>--</center> <small>（初期高）</small></td>
+            </tr>
+            <tr>
+                <td>第 1 年</td>
+                <td>5,000</td>
+                <td>192</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>5,210</td>
+                <td>0</td>
+                <td>16,500 <small>(約3​​.3倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 2 年</td>
+                <td>5,000</td>
+                <td>384</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>5,428.82</td>
+                <td>0</td>
+                <td>17,200 <small>(約3​​.2倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 3 年</td>
+                <td>5,000</td>
+                <td>576</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>5,656.85</td>
+                <td>0</td>
+                <td>17,900 <small>(約3​​.1倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 6 年</td>
+                <td>5,000</td>
+                <td>1152</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>0</td>
+                <td>20,000 <small>(約3​​.1倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 7 年</td>
+                <td>5,000</td>
+                <td>1344</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>200</td>
+                <td>19,500 <small>（約3.0倍）</small></td>
+            </tr>
+            <tr>
+                <td>第 8 年</td>
+                <td>5,000</td>
+                <td>1536</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>400</td>
+                <td>19,000 <small>(約2.9倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 10 年</td>
+                <td>5,000</td>
+                <td>1920</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>1,000</td>
+                <td>18,000 <small>(約2.8倍)</small></td>
+            </tr>
+            <tr>
+                <td>第 15 年</td>
+                <td>5,000</td>
+                <td>2880</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>2,000</td>
+                <td>15,500 <small>（約2.5倍）</small></td>
+            </tr>
+            <tr>
+                <td>第 20 年</td>
+                <td>5,000</td>
+                <td>3840</td>
+                <td>5,000 <small>(預期)</small></td>
+                <td>6,400.95</td>
+                <td>3,000</td>
+                <td>13,000 <small>(約2.0倍)</small></td>
+            </tr>
+            <tr>
+                <td><b>第 20 年總產</b></td>
+                <td><b>8,840</b></td>
+                <td><b>3,840</b></td>
+                <td><b>5,000</b> <small>(預期)</small></td>
+                <td><b>9,400.95</b></td>
+                <td><b>3,000</b></td>
+                <td><b>13,000</b><small>（約2.0倍）</small></td>
+            </tr>
+             <tr>
+                <td><b>保障特性</b></td>
+                <td colspan="3" align="center"><b><center>需確認滿期後是否仍有保證及金額，本次試算估價為5,000美元</center></b></td>
+                <td colspan="3" align="center"><b><center>初期保障放大效​​果顯著，約為保固價的2-3倍，間隔距離</center></b></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<腳本>
+  const ctxSimplified = document.getElementById('simplifiedChart').getContext('2d');
+  const 簡化圖表 = 新圖表（ctxSimplified，{
+    type: 'bar', // 將圖表類型改為長條圖
+    數據： {
+      labels: ['美利雙收 (不轉換)', '萬美利 (轉換)'], // X標籤
+      數據集：[{
+        label: '20年後總資本（美元）', // 資料標籤
+        data: [8840, 9400.95], // 資料數值
+        backgroundColor: ['rgb(75, 192, 192)', 'rgb(255, 99, 132)'] // 長度顏色
+      }]
+    }，
+    選項： {
+      回應： true，
+      插件：{
+        傳奇： {
+          display: false // 隱藏圖例，因為只有一組數據
+        }，
+        標題： {
+          顯示：真，
+          text: '20年後總資本比輔（簡化條款圖）',
+          字體：{
+            尺寸：18
+          }
+        }
+      }，
+      尺度：{
+        y: {
+          beginAtZero: true，
+          標題： {
+            顯示：真，
+            text: '財政資產 (美元)',
+            字體：{
+              尺寸：14
+            }
+          }，
+          刻度：{
+            字體：{
+              尺寸：12
+            }，
+             call: function(value, index, values) { // Y軸刻度加上美元符號
+                            返回'$'+值；
+                        }
+          }
+        }，
+        x：{
+          刻度：{
+            字體：{
+              尺寸：12
+            }
+          }
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
